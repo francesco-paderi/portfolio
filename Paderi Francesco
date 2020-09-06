@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<title>Paderi Francesco</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="homepage.css">
+<link rel="shorcut icon" href="f/log.png" type="image x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="header">
+  <h1>PADERI FRANCESCO</h1>
+  <ul>
+    <li><a href="#1">SU DI ME</a></li>
+    <li><a href="#2">ISTRUZIONE</a></li>
+    <li><a href="#3">SKILLS</a></li>
+    <li><a href="#4">LINGUE</a></li>
+    <li><a href="#5">LAVORI</a></li>
+  </ul>
+</div>
+
+<div class="row">
+  <div class="colonna sinistra">
+    <img src="f/io.png" alt="La mia immagine" style="width:200px;height:200px;"><br><br>
+    <h2 id="5">CONTATTI</h2><br>
+    <div class="yes">
+      <a href="https://www.facebook.com/francesco.paderi.750" target="_blank"><img src="f/fb.svg" alt="Facebook" style="width:30px;height:30px"></a>
+      <a href="https://www.instagram.com/paddox.95/" target="_blank"><img src="f/ig.svg" alt="Instagram" style="width:30px;height:30px"></a>
+      <a href="https://www.linkedin.com/feed/" target="_blank"><img src="f/lk.svg" alt="Linkledin" style="width:30px;height:30px"></a>
+      <a href="https://talent.start2impact.it/profile/francesco-paderi" target="_blank"><img src='f/s2i.png' alt="Linkledin" style="width:30px;height:30px"></a>
+      <a href="https://github.com/francesco675" target='_blank'><img src='f/gh.png' alt='GitHub' style="width:35px;height:35px"></a>
+    </div>
+  </div>
+  <div class="colonna destra" id="1">
+    <p>Ho scoperto questa passione per lo scrivere codici in maniera casuale, ma fin da bambino mi affascinavano le
+      tecnologie. Questo forte interesse mi ha portato a scoprire la programmazione poi e studiarla. Quelllo che mi affascina e come un'app o un sito internet possano fornire tante informazioni o diventare
+      un punto di riferimento per milioni di persone.
+      <br><br>
+      Oltre a questo i miei hobby sono la corsa, le arti marziali, il crossfit, leggere e lo snowborad.
+      <br><br>
+      Vivo a Venezia e ho 25 anni.</p>
+<br>
+    <h2 id="2">ISTRUZIONE</h2><br>
+      <p>I.T.N. "S. Venier", Venezia</p><br>
+      <p>Start2Impact</p>
+      <br>
+    <h2 id="3">SKILLS</h2><br>
+    <h3>HTML</h3><br>
+    <div class="html">
+      <div class="html1">5%</div>
+    </div>
+    <br>
+    <h3>CSS</h3><br>
+    <div class="css">
+      <div class="css1">5%</div>
+    </div>
+    <br>
+    <h3>JAVASCRIPT</h3><br>
+    <div class="js">
+      <div class="js1">0%</div>
+    </div>
+    <br>
+    <h3>NODE.JS</h3><br>
+    <div class="node">
+      <div class="node1">0%</div>
+    </div>
+    <br>
+    <h3>PHP</h3><br>
+    <div class="php">
+      <div class="php1">0%</div>
+    </div>
+    <br>
+    <h3>MYSQL</h3><br>
+    <div class="my">
+      <div class="my1">0%</div>
+    </div>
+    <br>
+    <h2 id="4">LINGUE</h2>
+    <br>
+    <h3>ITALIANO</h3><br>
+    <div class="ita">
+      <div class="ita1">100%</div>
+    </div>
+    <br>
+    <h3>INGLESE</h3><br>
+    <div class="en">
+      <div class="en1">50%</div>
+    </div>
+    <br>
+    <h2 id="5">LAVORI</h2> <br>
+    <p>COMING SOON</p>
+
+    <br>
+  </div>
+
+</div>
+<div class="f">
+  <p>@2020 All Rights Reserved</p>
+</div>
+
+
+
+</body>
+</html>
