@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Paderi Francesco</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="media.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta charset="ANSI">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/logo-flavicon.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/997ca98cd4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.png" alt="logo">
+            <div class="main-header">
+                <div class="title">
+                    <h4>Ciao, mi chiamo</h4>
+                    <h2>Francesco</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">#Su di me</a></li>
+                        <li><a href="#projects">#Progetti</a></li>
+                        <li><a href="#contact">#Contatti</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="welcome-section">
+                <h1 class="title-section" id="about">Su di me</h1>
+                <article id="about-body">
+                    <figure id="about-img">
+                        <img src="img/io.png" alt="io">
+                    </figure>
+                    <div id="about-text">
+                        <p>Ciao! Mi chiamo Francesco. Mi è sempre piaciuto analizzare e risolvere problemi per poi costruire una soluzione.
+                        <p>Ho scelto di diventare Front End Developer per risolvere problemi e costruire o migliorare la soluzione.</p>
+                        <p>Sono pronto a lanciarmi in una nuova sfida. Non esitare a contattarmi!</p> 
+                    </div>
+                </article>
+            </section>
+            <section id="projects">
+                <h1 class="title-section">Progetti</h1>
+                <div class="projects-field">
+                    <div class="project-box">
+                        <img src="img/tribute_page_img.png" alt="">
+                        <a href="projects/tribute_page/index.html" target="_blank">
+                        <div class="project-text">
+                            <h3>Eminem Tribute</h3>
+                        </div></a>
+                    </div>
+                    <div class="project-box">
+                        <img src="img/survey_form_img.png" alt="" ></a>
+                        <a href="projects/survey_form/index.html" target="_blank">
+                        <div class="project-text">
+                            <h3>Survey Form</h3>
+                        </div></a>
+                    </div>
+                    <div class="project-box">
+                        <img src="img/technical_page_img.png" alt="" ></a>
+                        <a href="projects/technical_documentation/index.html" target="_blank">
+                        <div class="project-text">
+                            <h3>Technical <br> Documentation</h3>
+                        </div></a>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h1 class="title-section">Contatti</h1>
+                <div class="form-content">
+                    <form>
+                        <div class="row">
+                            <div class="input-group">
+                                <input type="text" id="name" required>
+                                <label for="name"> <i class="fa-solid fa-user"></i> Il suo nome</label>
+                            </div>
+    
+                            <div class="input-group">
+                                <input type="mail" id="mail" required>
+                                <label for="mail"> <i class="fa-solid fa-envelope"></i> Mail</label>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="text" id="subject" required>
+                            <label for="subject"> 
+                                <i class="fa-solid fa-comment"></i>Oggetto
+                            </label>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea id="message" rows="8" required></textarea>
+                            <label for="message"> <i class="fa-solid fa-comments"></i>Il suo messaggio</label>
+                        </div>
+                        <button type="submit">INVIO <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                
+                <div class="icons">
+                    <a href="https://github.com/francesco675" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/francescopaderi/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="francesco.paderi14@gmail.com">
+                       
+                </div>
+            </section>
+            
+            <a class="arrow-up" href="#"><img src="img/arrow.ico"></img></a>
+        </main>
+        <footer>
+            <p>Built & Designed by Paderi Francesco</p>
+        </footer> 
+
+        
+    </body>
+</html>
