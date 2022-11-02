@@ -1,0 +1,339 @@
+/* 
+
+MAP STYLESHEET 
+-FONT
+-HEADER
+-MAIN
+--ABOUT
+-FOOTER
+
+*/
+
+/* FONT & PAGE */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+html, * {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    --main-font: 'Fira Code', monospace;
+    --main-color: #5CDB95;
+    --second-color: #ACCBC8;
+    --third-color: #EDF5E1;
+    --fourth-color: #8FE38D;
+    --fifth-color: #193A4C;
+    --sixth-color: #4E7874;
+    --title-size: 30px;
+    font-family: var(--main-font);
+    background-color: var(--fifth-color);
+    margin: 0;
+    padding: 0; 
+
+
+    --border-1: 1px solid red;
+    --border-2: 1px solid orange;
+    --border-3: 1px solid green;
+    --border-4: 1px solid purple;
+}
+
+
+/*------HEADER------*/
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+header img {
+    max-width: 50%;
+    width: 20%;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 21vh 49vh 0vh 21vh;
+}
+
+.title h4 {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+.title h2 {
+    color: var(--second-color);
+    font-size: 50px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header nav li {
+    overflow: hidden;
+    padding: 10px 50px;
+}
+
+header nav a {
+    display: block;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 700; 
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+header nav li a:hover {
+    transform: scale(1.3);
+    color: var(--second-color);
+}
+
+/*  MAIN  */
+main {
+    text-align: center;
+}
+
+section > .title-section {
+    padding-top: 20px;
+    color: var(--second-color);
+    font-size: var(--title-size);
+}
+
+/* ABOUT */
+#welcome-section {
+    margin: 0 300px 0 200px;
+}
+
+#about-body {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-top: 40px;
+    height: 100vh;
+}
+
+#about-text {
+    color: var(--main-color);
+    text-align: justify;
+    margin-right: 15vh;   
+}
+
+#about-text > p {
+    margin-top: 20px;    
+}
+
+#about-img {
+    display: inline-block;
+    position: relative;
+}
+
+#about-img img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 1s;
+}
+
+/* PROJECT */
+#projects {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.projects-field {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    align-content: baseline;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    padding: 30px 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .project-box {
+    position: relative;
+    width: 25%;
+    transform: scale(1);
+    overflow: hidden;
+    transition: all 1s ease;
+  }
+  
+  .project-box:hover {
+    box-shadow: 0 0 20px rgba(59, 107, 135, 0.653);
+    transform: scale(1.1);
+    z-index: 7;
+    overflow: hidden;
+  }
+  
+  .project-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 1s ease;
+    overflow: hidden;
+  }
+  
+  .project-box:hover img{
+    filter: blur(3px);
+    overflow: hidden;
+  }
+  
+  
+  .project-text {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    color: var(--second-color); 
+    transition: all 1s ease;
+  }
+  
+  .project-text:hover {
+    background-color: rgba(25, 58, 77, 0.6);
+    opacity: 1;
+    overflow: hidden;
+  }
+  
+  .project-text h3 {
+    width: 80%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    margin: 0px 5px;
+    font-weight: 500;
+    font-size: 23px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    word-wrap: break-word;
+    transition: all 1s ease;
+  }
+  
+  .project-text:hover h3 {
+    opacity: 1;
+  }
+
+/*------contacts------*/
+
+#contacts {
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.mail {
+    border: 2px solid #5CDB95;
+    padding: 15px;
+    margin: 100px;
+    background-color: transparent;
+    width: 20%;
+    transition: all 1s ease;
+}
+
+.mail a {
+    text-decoration: none;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    color: var(--main-color);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.mail:hover {
+    background-color: #5cdb9523;
+    box-shadow: 0px 0px 5px #5CDB95;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.icons div {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 0px 105px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.icons div a {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    font-size: 30px;
+    inset: 15px 0px;
+    padding-top: 5px;
+    color: #5CDB95;
+    text-decoration: none;
+    transition: all 600ms ease;
+}
+
+.icons div a:hover {
+    font-size: 40px;
+    overflow: hidden;
+    transform: scale(1.2);
+
+}
+
+
+/*------arrow------*/
+.arrow-up {
+ position: fixed;
+ width: 5%;
+ height: 5%;
+ background: transparent;
+ bottom: 80px;
+ right: 50px;
+}
+
+.arrow-up img {
+    width: 100%;
+    border: 1px solid #5CDB95;
+    box-shadow: 0 0 10px rgba(92, 219, 149, 0.4);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.arrow-up img:hover {
+    box-shadow: 0 0 20px rgba(92, 219, 149, 0.7);
+} 
+
+/*------footer------*/
+
+footer {
+    text-align: center;
+    margin: 50px 0 30px 0;
+    color: var(--main-color);
+    font-weight: 500;
+    z-index: inherit;
+}
