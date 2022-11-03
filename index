@@ -2,8 +2,8 @@
 <html>
     <head lang="en">
         <title>Paderi Francesco</title>
-        <link rel="stylesheet" href="styles.css" type="text/css">
-        <link rel="stylesheet" href="media.css" type="text/css">
+        <link rel="stylesheet" href="styles.css" type="text/css"><!-- 
+        <link rel="stylesheet" href="media.css" type="text/css"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <meta charset="ANSI">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,19 +12,19 @@
     </head>
     <body>
         <header>
-            <img src="img/logo.png" alt="logo">
+            <nav id="navbar"> 
+                <a href="https://imgbox.com/g2afIWXo" target="_blank"><img src="https://images2.imgbox.com/64/cb/g2afIWXo_o.png" alt="image host"/></a>
+                <ul>
+                    <li><a href="#about">#Su di me</a></li>
+                    <li><a href="#projects">#Progetti</a></li>
+                    <li><a href="#contacts">#Contatti</a></li>
+                </ul>
+            </nav>
             <div class="main-header">
                 <div class="title">
-                    <h4>Ciao, mi chiamo</h4>
-                    <h2>Francesco</h2>
+                    <p id="first">Ciao, mi chiamo <span>Francesco</span> un</p> 
+                    <p id="second">Front-End Developer</p>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#about">#Su di me</a></li>
-                        <li><a href="#projects">#Progetti</a></li>
-                        <li><a href="#contact">#Contatti</a></li>
-                    </ul>
-                </nav>
             </div>
         </header>
         <main>
@@ -32,7 +32,7 @@
                 <h1 class="title-section" id="about">Su di me</h1>
                 <article id="about-body">
                     <figure id="about-img">
-                        <img src="img/io.png" alt="io">
+                        <a href="https://imgbox.com/WBVQtqo6" target="_blank"><img src="https://images2.imgbox.com/69/87/WBVQtqo6_o.png" alt="image host"/></a>
                     </figure>
                     <div id="about-text">
                         <p>Ciao! Mi chiamo Francesco. Mi è sempre piaciuto analizzare e risolvere problemi per poi costruire una soluzione.
@@ -44,21 +44,21 @@
             <section id="projects">
                 <h1 class="title-section">Progetti</h1>
                 <div class="projects-field">
-                    <div class="project-box">
+                    <div class="project-tile">
                         <img src="img/tribute_page_img.png" alt="">
                         <a href="projects/tribute_page/index.html" target="_blank">
                         <div class="project-text">
                             <h3>Eminem Tribute</h3>
                         </div></a>
                     </div>
-                    <div class="project-box">
+                    <div class="project-tile">
                         <img src="img/survey_form_img.png" alt="" ></a>
                         <a href="projects/survey_form/index.html" target="_blank">
                         <div class="project-text">
                             <h3>Survey Form</h3>
                         </div></a>
                     </div>
-                    <div class="project-box">
+                    <div class="project-tile">
                         <img src="img/technical_page_img.png" alt="" ></a>
                         <a href="projects/technical_documentation/index.html" target="_blank">
                         <div class="project-text">
@@ -67,52 +67,23 @@
                     </div>
                 </div>
             </section>
-            <section id="contact">
-                <h1 class="title-section">Contatti</h1>
-                <div class="form-content">
-                    <form>
-                        <div class="row">
-                            <div class="input-group">
-                                <input type="text" id="name" required>
-                                <label for="name"> <i class="fa-solid fa-user"></i> Il suo nome</label>
-                            </div>
-    
-                            <div class="input-group">
-                                <input type="mail" id="mail" required>
-                                <label for="mail"> <i class="fa-solid fa-envelope"></i> Mail</label>
-                            </div>
-                        </div>
-                        
-                        <div class="input-group">
-                            <input type="text" id="subject" required>
-                            <label for="subject"> 
-                                <i class="fa-solid fa-comment"></i>Oggetto
-                            </label>
-                        </div>
-
-                        <div class="input-group">
-                            <textarea id="message" rows="8" required></textarea>
-                            <label for="message"> <i class="fa-solid fa-comments"></i>Il suo messaggio</label>
-                        </div>
-                        <button type="submit">INVIO <i class="fa-solid fa-paper-plane"></i></button>
-                    </form>
+            <section id="contacts">
+                <h1 class="title-section contact">Contatti</h1>
+                <div class="mail">
+                    <a href="mailto:francesco.paderi14@gmail.com"> Dì Ciao</a>
                 </div>
-                
                 <div class="icons">
-                    <a href="https://github.com/francesco675" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/francescopaderi/" target="_blank">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-
-                    <a href="francesco.paderi14@gmail.com">
-                       
+                    <div class="github">
+                        <a id="profile-link" href="https://github.com/francesco675" target="_blank" class="fa-brands fa-github"></a>
+                    </div>
+                    <div class="linkedin">
+                        <a id="profile-link" href="https://www.linkedin.com/in/francescopaderi/" target="_blank" class="fa-brands fa-linkedin-in">
+                        </a>
+                    </div>
                 </div>
             </section>
             
-            <a class="arrow-up" href="#"><img src="img/arrow.ico"></img></a>
+<!--             <a class="arrow-up" href="#"><img src="img/arrow.ico"></img></a> -->
         </main>
         <footer>
             <p>Built & Designed by Paderi Francesco</p>
