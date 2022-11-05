@@ -1,0 +1,185 @@
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    
+    header nav {
+        background-color: transparent; 
+    
+    }
+    
+    header nav #title {  
+        font-size: 60px; 
+        bottom: 60px; 
+        right: 20px; 
+    } 
+
+    header nav .line {
+        position: absolute; 
+        width: 50%; 
+        top: 35px; 
+        right: 53%; 
+    }
+    
+    header nav .real-name {
+        bottom: 70px; 
+        right: 17px; 
+        font-size: 12px; 
+    }
+    
+    header nav .quote p {
+        font-size: 15px; 
+        background-color: transparent; 
+
+        position: relative; 
+        bottom: 100px;
+        right: 18px;
+        width: 50%;
+        line-height: 22px;
+    }
+
+    header nav .quote{
+        background-color: transparent; 
+    }
+
+    .bio {
+        flex-direction: column;  
+    }
+    
+    .bio .title-bio {
+        padding-left: 2vh; 
+    }
+    
+    .bio .text-bio {
+        padding: 3vh 2vh 0 2vh; 
+    } 
+
+    .discography .title-disco h1{
+        padding: 0 0 5vh 2vh; 
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header figure figcaption {
+        left: 93%; 
+        top: 59%; 
+        font-size: 14px; 
+    }
+    
+    header nav {
+        background-color: transparent; 
+        top: 25%; 
+    
+    }
+    
+    header nav #title {
+        font-size: 65px; 
+        bottom: 60px; 
+        right: 20px; 
+    } 
+
+    header nav .line {
+        position: absolute; 
+        width: 55%; 
+        top: 35px; 
+        right: 48%; 
+    }
+    
+    header nav .real-name {
+        bottom: 70px; 
+        right: 17px; 
+        font-size: 13px; 
+    }
+    
+    header nav .quote p {
+        font-size: 17px; 
+        background-color: transparent; 
+        position: relative; 
+        bottom: 100px;
+        right: 18px;
+        width: 50%;
+        line-height: 22px;
+    }
+
+    header nav .quote{
+        background-color: transparent; 
+    }
+
+    .bio {
+        flex-direction: row;  
+    }
+    
+    .bio .title-bio {
+        padding: 0 0 0 2vh; 
+    }
+    
+    .bio .text-bio {
+        padding: 1vh 3vh 0 10vh; 
+    } 
+
+    .discography .title-disco h1{
+        padding: 0 0 5vh 2vh; 
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+    
+    header figure figcaption {
+        left: 93%; 
+        top: 66%; 
+        font-size: 13px; 
+    }
+    
+    header nav {
+        background-color: transparent; 
+        top: 30%; 
+        left: 20%; 
+    
+    }
+    
+    header nav #title {  
+        font-size: 80px; 
+        bottom: 60px; 
+        right: 20px; 
+    } 
+
+    header nav .line {
+        position: absolute; 
+        width: 55%; 
+        top: 55px; 
+        right: 48%; 
+    }
+    
+    header nav .real-name {
+        bottom: 70px; 
+        right: 17px; 
+        font-size: 14px; 
+    }
+    
+    header nav .quote p {
+        font-size: 17px; 
+        background-color: transparent; 
+        position: relative; 
+        bottom: 100px;
+        right: 17px;
+        width: 70%;
+        line-height: 22px;
+    }
+
+    header nav .quote{
+        background-color: transparent; 
+    }
+
+    .bio {
+        flex-direction: row;  
+    }
+    
+    .bio .title-bio {
+        padding: 0 0 0 4h; 
+    }
+    
+    .bio .text-bio {
+        padding: 1vh 3vh 0 10vh; 
+    } 
+
+    .discography .title-disco h1{
+        padding: 0 0 5vh 4vh; 
+    }
+}
