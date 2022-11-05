@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/997ca98cd4.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/house-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>House Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">House Survey Form</h1>
+        <p id="description">Find the house that meets your needs!</p>
+    </header>
+    <main>
+        <form action="" id="survey-form">
+            <fieldset>
+                <legend><h2>Personal Information</h2></legend>
+                
+                <label id="name-label" for="name">What's your name?</label>
+                <input name="name" id="name" type="text" placeholder="Insert your name" required>
+
+                <br>
+
+                <label id="email-label" for="email">What's your email?</label>
+                <input name="email" id="email" type="email" inputmode="email" placeholder="Insert your email" required>
+
+                <br>
+
+                <label for="cellphone">What's you cellphone number?</label>
+                <input name="cellphone" id="cellphone" type="tel number" placeholder="Insert your callphone number" required>
+
+                <br>
+
+                <label id="number-label" for="number">How old are you?</label>
+                <input name="number" id="number" type="text" inputmode="numeric" placeholder="Insert your age" min="1" max="150" required>
+
+                <br>
+
+                <h2 class="house-info">House Information</h2>
+
+                <p id="title-box">What's your sex?</p>
+                    <div class="box">
+                        <input type="radio" id="male" name="sex" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="sex" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                    
+                <br>
+                <p id="title-box">Do you smoke?</p>
+                    <div class="box">
+                        <input type="radio" id="yes" name="smoke" value="Yes">    
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="smoke" value="No">
+                        <label for="no">No</label>
+                    </div>
+                <br>
+                <p id="title-box">Do you want animals in your house?</p>
+                    <div class="box">
+                        <input type="radio" name="animals" id="Yes" value="Yes">    
+                        <label for="Yes">Yes</label>
+                        <input type="radio" name="animals" id="No" value="No">
+                        <label for="No">No</label>
+                    </div>
+                <br>
+                <label for="bed" id="title-box">Which bed you want in your room?</label>
+                <div class="custom-select">
+                    <select name="bed" id="bed">
+                        <option value="select" selected disabled>Select</option>
+                        <option value="single">Single</option>
+                        <option value="matrimonial">Matrimonial</option>
+                        <option value="two_beds">Two Beds</option>
+                        <option value="without_bed">Without Bed</option>
+                    </select>
+                </div>
+                <br>
+                <label for="people" id="title-box">How many people do you want to live with?</label>
+                <div class="custom-select">
+                    <select name="people" id="dropdown">
+                        <option value="select" selected disabled>Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3_or_more">3 or more</option>
+                    </select>
+                </div>
+                
+                <br>
+
+                <label for="rommates" id="title-box">What are your future rommates doing?</label>
+                <div class="custom-select">
+                    <select name="rommates" id="rommates">
+                        <option value="select" selected disabled>Select</option>
+                        <option value="workers">They work</option>
+                        <option value="student">They study</option>
+                    </select>
+                </div>
+                
+                <br>
+
+                <p id="title-box">How do you want your room?</p> 
+                    <div class="checkbox">
+                        <input type="checkbox" id="couples" name="couples" value="Couples">
+                        <label for="couples">Admitted couples</label><br>
+                        <input type="checkbox" id="minors" name="minors" value="Minors">
+                        <label for="minors">Minors are accepted</label><br>
+                        <input type="checkbox" id="bathroom" name="bathroom" value="Bathroom">
+                        <label for="bathroom">Private bathroom</label><br>
+                        <input type="checkbox" id="lgtb" name="lgtb" value="LGTB">
+                        <label for="lgtb">LGTB friendly</label><br>
+                        <input type="checkbox" id="owner" name="owner" value="Owner">
+                        <label for="owner">The owner does not live in the house</label>
+                    </div>
+                <br>
+                     
+                <p id="title-box">How do you want your house?</p> 
+                    <div class="checkbox">
+                        <input type="checkbox" id="air" name="air" value="Air">
+                        <label for="air">Air conditioning</label><br>
+                        <input type="checkbox" id="elevator" name="elevator" value="Elevator">
+                        <label for="elevator">Elevator</label><br>
+                        <input type="checkbox" id="terrance" name="terrance" value="Terrance">
+                        <label for="terrance">Terrace</label><br>
+                        <input type="checkbox" id="accessible" name="accessible" value="Accessible">
+                        <label for="accessible">Accessible home</label><br>
+                        <input type="checkbox" id="clean" name="clean" value="Clean">
+                        <label for="clean">Cleaning included</label><br>
+                        <input type="checkbox" id="garden" name="garden" value="Garden">
+                        <label for="garden">Garden</label><br>
+                        <input type="checkbox" id="pool" name="pool" value="Pool">
+                        <label for="pool">Pool</label>
+                    </div>
+                <br>
+
+                <p id="title-box">How do you want your room?</p> 
+                    <div class="checkbox">
+                        <input type="checkbox" id="couples" name="couples" value="Couples">
+                        <label for="couples">Admitted couples</label><br>
+                        <input type="checkbox" id="minors" name="minors" value="Minors">
+                        <label for="minors">Minors are accepted</label><br>
+                        <input type="checkbox" id="bathroom" name="bathroom" value="Bathroom">
+                        <label for="bathroom">Private bathroom</label>
+                    </div>
+                <br>
+                <p id="title-box">What floor do you want to live in?</p>
+                    <div class="box floor">
+                        <input type="radio" id="top" name="smoke" value="Top">     
+                        <label for="top">Top floor</label>
+                        <input type="radio" id="ground" name="smoke" value="Ground">
+                        <label for="ground">Ground floor</label>
+                        <input type="radio" id="intermediate" name="smoke" value="Intermediate">
+                        <label for="intermediate">Intermediate floors</label>
+                    </div>
+                <br>
+                <p id="title-box">Write other things that you think are important</p>
+                <textarea name="comments" id="comments" cols="45" rows="10" placeholder="Write...."></textarea>
+
+                <input id="submit" type="submit" value="Send">
+            </fieldset>
+        </form>
+    </main>    
+</body>
+</html>
