@@ -183,3 +183,372 @@
         padding: 0 0 5vh 4vh; 
     }
 }
+
+@media print {
+/*     *{
+        margin: 0;
+        padding: 0;
+        font-family: Roboto, sans-serif;
+    }
+    body{
+        margin: 50px; 
+        padding: 0;
+    }
+    
+    header .img-eminem-header img {
+        width: 100%;
+        height: auto;
+    }
+    
+    header nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        color: white;
+        background-color: transparent;
+    }
+    
+    header nav #title {
+        font-size: 100px;
+        position: relative;
+        right: 5px;
+        background-color: transparent;
+    } 
+    
+    header nav .line {
+        position: relative;
+        top: 20px;
+        background-color: #d0c7ca;
+        padding: 1px;
+    }
+    
+    header nav .real-name {
+        position: relative;
+        bottom: 15px;
+        font-style: italic;
+        font-size: 14px;
+        background-color: transparent;
+    }
+    
+    header nav .quote p {
+        position: relative;
+        font-style: italic;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    
+    header nav article {
+        position: relative;
+        top: 70px;
+    }
+    
+    main {
+        position: relative;
+        background-color: #d0c7ca;
+        bottom: 5px;
+    }
+    
+    .bio {
+       display: flex;
+        flex-direction: row; 
+        padding: 120px 0 80px 0;
+         
+    }
+    
+    .bio .title-bio {
+        padding-left: 12vh;
+    }
+    
+    .bio .text-bio {
+        padding: 0px 20vh 0px 30vh;
+        text-align: justify;
+        text-justify: justify;
+    }
+    
+    
+    .discography {
+        padding-bottom: 50px;
+        margin: 2px;
+    }
+    
+    .discography .title-disco h1{
+        padding: 0 0 5vh 12vh;
+    }
+    
+    .discography .album-disco {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        
+    }
+    
+    .discography .album-disco figure {
+        position: relative;
+        overflow: hidden;
+        
+    }
+    .discography .album-disco figure > img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .discography .album-disco figure > figcaption {
+        position: absolute;
+        inset: 0;
+        font-size: 1rem;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        cursor: auto;
+    }
+    
+    .discography .album-disco figure figcaption > ul {
+        list-style-type: none;
+        margin-top: 10px;
+    }
+    
+    .discography figure > img, figure > figcaption {
+        transition: 600ms ease-in-out;
+    }
+    
+    .discography figure > figcaption {
+        opacity: 0;
+    }
+    
+    .discography figure:hover > figcaption {
+        opacity: 1;
+    }
+    
+    .discography figure:hover > img {
+        filter: blur(4px);
+        transform: scale(1.1);
+    }
+    
+    
+    footer {
+        background-color: #d0c7ca;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 0 25px 0;
+        position: relative;
+        bottom: 15px;
+    }
+    
+    footer .sources h3{
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    footer .sources .info-sources {
+        display: inline-block;
+        width: 60px; 
+        height: 60px; 
+        float: left;
+        overflow: hidden;
+        margin: 0 5px;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 50px;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        transition: all 0.3s ease-out;
+    }
+    
+    footer .sources .info-sources:hover {
+        width: 300px; 
+    }
+    
+    footer .sources .info-sources i {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+        text-align: center;
+        transition: all 0.3s ease-out;
+    }
+    
+    footer .sources .info-sources:hover i {
+        color: #fff;
+    }
+    
+    footer .sources .info-sources i {
+        font-size: 25px;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+    }
+    
+    footer .sources .info-sources:hover i {
+        background: #004d73;
+    }
+    
+    footer .sources .info-sources span a {
+        display: none;
+        position: relative;
+        bottom: 55px;
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 10px;
+        color: #004d73;
+        text-decoration: none;
+    }
+    
+    footer .sources .info-sources:hover span a {
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer .sources .info-sources #biography {
+        margin: 0 7px 2px 0;
+    }
+    
+    footer .contacts h3{
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    footer .contacts .link-contact .button {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin: 0 5px;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        transition: all 0.3s ease-out;
+    }
+    
+    footer .contacts .link-contact .button a {
+        text-decoration: none;
+    }
+    
+    footer .contacts .link-contact .button:hover{
+        width: 200px;
+    } 
+    
+    footer .contacts .link-contact .button .icon {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+        font-size: 25px;
+        text-align: center;
+        transition: all 0.3s ease-out;
+    }
+    
+    footer .contacts .link-contact .button:hover .icon i {
+        color: #fff;
+    }
+    
+    footer .contacts .link-contact .button .icon i {
+        font-size: 25px;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+    }
+    
+    footer .contacts .link-contact .button:nth-child(1):hover .icon{
+        background: #333; 
+    }
+    
+    footer .contacts .link-contact .button:nth-child(2):hover .icon{
+        background: #0077b4;
+    }
+    
+    footer .contacts .link-contact .button span {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 60px;
+        margin-left: 10px;
+    }
+    
+    footer .contacts .link-contact .button:nth-child(1) span{
+        color: #333; 
+    }
+    
+    footer .contacts .link-contact .button:nth-child(2) span{
+        color: #0077b4;
+    }
+    
+    footer .contacts i{
+        color: #183052;
+    } */
+    header nav {
+        background-color: transparent; 
+    
+    }
+    
+    header nav #title {  
+        font-size: 60px; 
+        bottom: 60px; 
+        right: 20px; 
+    } 
+
+    header nav .line {
+        position: absolute; 
+        width: 50%; 
+        top: 35px; 
+        right: 53%; 
+    }
+    
+    header nav .real-name {
+        bottom: 70px; 
+        right: 17px; 
+        font-size: 12px; 
+    }
+    
+    header nav .quote p {
+        font-size: 15px; 
+        background-color: transparent; 
+
+        position: relative; 
+        bottom: 100px;
+        right: 18px;
+        width: 50%;
+        line-height: 22px;
+    }
+
+    header nav .quote{
+        background-color: transparent; 
+    }
+
+    .bio {
+        flex-direction: column;  
+    }
+    
+    .bio .title-bio {
+        padding-left: 2vh; 
+    }
+    
+    .bio .text-bio {
+        padding: 4vh 2vh 0 2vh; 
+    } 
+
+    .discography {
+        margin-top: 20vh;
+        padding-top: 3.9vh;
+    }
+
+    .discography .title-disco h1{
+        padding: 0 0 5vh 2vh; 
+    }
+
+    footer {
+        display: none;
+    }
+     
+}
