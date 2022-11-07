@@ -1,0 +1,190 @@
+@media only screen and (max-width: 480px) {
+
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+    
+    /*------HEADER------*/
+    
+    header {
+        margin: 0px 40px;
+    }
+    
+    header p {
+        font-size: 18px;
+    }
+    
+    header h1 {
+        font-size: 40px;
+        padding-bottom: 25px;
+    }
+    
+    /*------MAIN------*/
+    
+    main fieldset legend {
+        padding-bottom: 40px;
+        font-size: 20px;
+    }
+
+    main fieldset {
+        margin: 0px 0px;
+        padding: 0px;
+        width: 96%;
+    }
+    
+    main fieldset > label {
+        font-size: 16px;
+    }
+    
+    /*------ first FORM ------*/
+    
+    form fieldset #title-box {
+        font-size: 16px;
+        margin: 0px 5px;
+    }
+    
+    form fieldset .box {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    form fieldset .floor {
+        gap: 10px;
+        
+    }
+    
+    form fieldset .checkbox {
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    form fieldset .checkbox label {
+        padding: 10px 3px;
+    }
+    
+    form fieldset .checkbox label::before {
+        height: 10px;
+        width: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    /*------select------*/
+    
+    form fieldset textarea {
+        width: 80%;
+    }
+    
+    form fieldset textarea::placeholder{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    
+    header p {
+        font-size: 18px; 
+    }
+    
+    header h1 {
+        font-size: 50px;
+    }
+    
+    main fieldset {
+        margin: 0 5%; 
+    }
+    
+    main fieldset > label {
+        font-size: 16px; 
+    }
+
+    
+    form fieldset #title-box {
+        font-size: 16px; 
+    }
+    
+    form fieldset .checkbox {
+        justify-content: center; 
+        flex-direction: column; 
+    }
+    
+    form fieldset textarea::placeholder{
+        font-size: 14px; 
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    body {
+        font-size: 16px; 
+    }
+    
+    header p {
+        font-size: 18px; 
+    }
+    
+    header h1 {
+        font-size: 50px; 
+    }
+    
+    main fieldset legend {
+        font-size: 20px;
+    }
+    
+    main fieldset {
+        margin: 0 10%;
+    }
+    
+    main fieldset > label {
+        font-size: 16px; 
+    }
+    
+    form fieldset #title-box {
+        font-size: 16px;
+    }
+    
+    form fieldset textarea::placeholder{
+        font-size: 14px; 
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+
+    body {
+        font-size: 16px; 
+    }
+    
+    header p {
+        font-size: 18px;
+    }
+    
+    header h1 {
+        font-size: 50px;
+    }
+    
+    main fieldset legend {
+        font-size: 20px;
+    }
+    
+    main fieldset {
+        margin: 0 20%; 
+    }
+    
+    main fieldset > label {
+        font-size: 16px;
+    }
+    
+    form fieldset #title-box {
+        font-size: 16px;
+    }
+    
+    form fieldset textarea::placeholder{
+        font-size: 14px;
+    }
+}
