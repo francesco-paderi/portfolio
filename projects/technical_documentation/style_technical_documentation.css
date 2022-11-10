@@ -1,11 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
+:root {
+    --background-color: #fff;
+    --text-color-one: #000;
+    --text-color-two: #4d4e53;
+    --text-color-code: #000;
+    --code-color: #e0e0e0;
+    --border-color: rgba(0,22,22,0.4);
+}
+
+.dark-theme {
+    --background-color: #000;
+    --text-color-one: #fff;
+    --text-color-two: #cbc7c7;
+    --text-color-code: #fff; 
+    --code-color: #1f1f1f;
+    --border-color: rgba(255, 255, 255, 0.4);
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    color: #4d4e53;
+    color: var(--text-color-two);
+    background-color: var(--background-color);
 }
 
 /*------HEADER------*/
@@ -17,16 +36,32 @@ body {
     width: 300px;
     height: 100%;
     border-right: solid;
-    border-color: rgba(0,22,22,0.4);
+    border-color: var(--border-color);
 }
 
-#navbar header {
+#navbar .title img {
+    width: 26px;
+    margin-top: 5px;
+    padding: 0px 5px;
+    cursor: pointer;
+
+}
+
+#navbar .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 15px;
+}
+
+#navbar .title header {
     text-align: center;
-    margin: 20px;
     padding: 0px;
-    font-size: 25px;
+    margin-right: 10px;
+    font-size: 23px;
     font-weight: 800;
-    color: black;
+    color: var(--text-color-one);
 }
 
 #navbar ul {
@@ -40,7 +75,7 @@ body {
     list-style: none;
     position: relative;
     width: 100%;
-    border-top: 1px solid #4d4e53;
+    border-top: 1px solid var(--text-color-two);
     padding: 10px 25px;
     font-weight: 600;
     font-size: 17px;
@@ -48,11 +83,14 @@ body {
 
 #navbar ul li a {
     text-decoration: none;
-    color: #4d4e53;
+    color: var(--text-color-one);
     display: block;
 }
 
 /*------main------*/
+#print {
+    display: none;
+}
 
 #main-doc {
     position: absolute;
@@ -63,7 +101,7 @@ body {
 #main-doc header {
     font-size: 30px;
     font-weight: 600;
-    color: black;
+    color: var(--text-color-one);
 }
 
 #main-doc article {
@@ -78,25 +116,9 @@ body {
     word-break: normal;
     word-wrap: normal;
     line-height: 2;
-    background-color: #f7f7f7;
+    color: var(--text-color-code);
+    background-color: var(--code-color);
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    #navbar { 
-        position: relative; 
-        width: 100%;
-        height: 350px; 
-    }
-    
-    #navbar ul {
-        height: 84%; 
-    }
-
-    #main-doc {
-        margin-left: 0px; 
-        margin-top: 30px; 
-    }
 }
