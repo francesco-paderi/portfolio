@@ -1,0 +1,34 @@
+@media print {
+    #navbar {
+        display: none;
+    }
+
+    #print {
+        display: block;
+        font-size: 50px;
+        text-align: center;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    #main-doc {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #navbar { 
+        position: relative; 
+        width: 100%;
+        height: 350px; 
+    }
+    
+    #navbar ul {
+        height: 84%; 
+    }
+
+    #main-doc {
+        margin-left: 0px; 
+        margin-top: 30px; 
+    }
+}
