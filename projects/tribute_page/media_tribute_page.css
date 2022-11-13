@@ -1,8 +1,137 @@
+@media only screen and (max-width: 480px) {
+
+    body{
+        margin: 0px;
+    }
+
+    /* HEADER */
+
+    header nav {
+        top: 5%;
+        left: 5%;
+    }
+
+    header nav #title {
+        font-size: 50px;
+    } 
+
+    header nav .line {
+        top: 8px;
+        width: 45%;
+    }
+
+    header nav .real-name {
+        bottom: 8px;
+    }
+
+    header nav .quote p {
+        font-size: 15px;
+        width: 50%;
+    }
+
+    header nav article {
+        top: 40px;
+    }
+
+    /*MAIN*/
+    /*-- BIO*/
+
+    .bio {
+        flex-direction: column; 
+    }
+
+    .bio .title-bio {
+        padding-left: 3vh;
+    }
+
+    .bio .text-bio {
+        padding: 0vh 4vh;
+    }
+
+    .bio .text-bio > p {
+        padding-top: 3vh;
+        font-size: 14px;
+    }
+
+    /* DISCOGRAPHY */
+
+    .discography {
+        margin: 0px;
+    }
+
+    .discography .title-disco h1{
+        padding: 0 0 5vh 3vh;
+    }
+
+    .discography .album-disco {
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));        
+    }
+
+    .discography .album-disco figure > figcaption {
+        font-size: 14px;
+    }
+
+    /*--FOOTER--*/
+
+    footer {
+        gap: 50px;
+    }
+
+    footer .sources h3{
+        margin-bottom: 20px;
+    }
+
+    footer .sources .info-sources {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer .sources .info-sources:hover {
+        width: 170px;
+    }
+
+    footer .sources .info-sources i {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    footer .sources .info-sources > span a {
+        bottom: 45px;
+        font-size: 16px;
+        margin-right: 25px;
+    }
+
+    footer .sources .info-sources:hover span a {
+        justify-content: right;
+    }
+
+    footer .contacts .link-contact .button {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer .contacts .link-contact .button .icon {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    footer .contacts .link-contact .button .icon i {
+        line-height: 50px;
+    }
+
+    footer .contacts .link-contact .button span {
+        font-size: 16px;
+        line-height: 50px;
+    }
+ 
+}
+
 @media only screen and (min-width: 480px) and (max-width: 768px) {
     
     header nav {
         background-color: transparent; 
-    
     }
     
     header nav #title {  
@@ -552,3 +681,5 @@
     }
      
 }
+
+
