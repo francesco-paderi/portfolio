@@ -37,8 +37,8 @@ header #navbar {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  background-color: #193A4C;
-  z-index: 9;
+  background-color: var(--fifth-color);
+  z-index: 10;
 }
 
 header #navbar img {
@@ -55,7 +55,7 @@ header #navbar img {
 header #navbar ul li {
   display: inline-block;
   width: 200px;
-  height: 50px;
+  height: 55px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -83,26 +83,29 @@ header #navbar li a:hover {
 }
 
 .main-header {
-    padding: 45vh 0vh;
-  }
+  padding: 45vh 0vh;
+}
 
 .title {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
 }
 
-.title #first {
-  position: relative;
-  right: 18vh;
+.title h1 {
+  text-align: left;
   font-weight: 500;
   font-size: 18px;
+  line-height: 55px;
   color: var(--main-color);
 }
 
-.title #second {
+.title h1 span {
   font-weight: 900;
-    color: var(--second-color);
-    font-size: 50px;
+  font-size: 50px;
+  color: var(--second-color);
 }
 
 /*  MAIN  */
@@ -111,7 +114,7 @@ main {
 }
 
 section > .title-section {
-  padding-top: 70px;
+  padding-top: 80px;
   color: var(--second-color);
   font-size: var(--title-size);
 }
@@ -151,7 +154,7 @@ section > .title-section {
   pointer-events: none;
 }
 
-/* PROJECT */
+/*------projects------*/
 #projects {
   width: 100%;
   height: auto;
@@ -194,7 +197,7 @@ section > .title-section {
   overflow: hidden;
 }
   
-.project-tile:hover img{
+.project-tile:hover img {
   filter: blur(3px);
   overflow: hidden;
 }
@@ -214,25 +217,53 @@ section > .title-section {
   opacity: 1;
   overflow: hidden;
 }
-  
+
 .project-text h3 {
-  width: 80%;
-  height: 100%;
+  width: 100%;
+  height: 50%;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   opacity: 0;
-  margin: 0px 5px;
   font-weight: 500;
   font-size: 23px;
   overflow: hidden;
   overflow-wrap: break-word;
   word-break: break-all;
   word-wrap: break-word;
-  transition: all 1s ease;
+  transition: all 600ms ease;
 }
-  
+
 .project-text:hover h3 {
+  opacity: 1;
+}
+
+.project-text .project-icons {
+  width: 100%;
+  height: 50%;
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0px 50px;
+  padding-top: 30px;
+  opacity: 0;
+  font-weight: 500;
+  font-size: 25px;
+  transition: all 600ms ease;
+}
+
+.project-text .project-icons a {
+  text-decoration: none;
+  color: var(--third-color);
+  transition: all 600ms ease;
+
+}
+
+.project-text .project-icons a:hover {
+  transform: scale(1.5);
+}
+
+.project-text:hover .project-icons{
   opacity: 1;
 }
 
@@ -265,6 +296,7 @@ section > .title-section {
   color: var(--main-color);
   font-size: 18px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .mail:hover {
@@ -278,7 +310,7 @@ section > .title-section {
   display: inline-block;
   width: 70px;
   height: 70px;
-  margin: 0px 30px;
+  margin: 0px 10px;
   overflow: hidden;
   box-sizing: border-box;
 }
