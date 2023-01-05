@@ -10,5 +10,4 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 
 [Contribution guidelines for this project](docs/CONTRIBUTING.md)
 
-
-[This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+@octocat :+1: This PR looks great - it's ready to merge! :shipit:
