@@ -11,3 +11,5 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 [Contribution guidelines for this project](docs/CONTRIBUTING.md)
 
 @octocat :+1: This PR looks great - it's ready to merge! :shipit:
+
+<!-- This content will not appear in the rendered Markdown -->
