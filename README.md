@@ -2,6 +2,10 @@
 
 This is my portfolio where all my projects are inserted. For the projects I have used Javascript as a programming language, some are done with HTML & CSS only.
 Each project can be opened like a normal internet page, with CodePen (it allows you to write code in the browser, and see the results of it as you build) or GitHub.
+Here the list of my projects:
+1. survey_form
+2. technical_documentation
+3. tribute_page
 
 ## LICENSE
 MIT License
